@@ -7,9 +7,12 @@ public class _00_SortedArrayChecker {
 	//   The method returns true if the integer
 	//   array is in ascending order and false otherwise
   static boolean intArraySorted(int[] array)  {
-	  if
-	return false;
-	  
+	  for (int i = 0; i < array.length - 1; i++ ) {
+	  if (array[i] > array[i + 1]) {
+		return false;
+	  }
+	  }
+	  return true;
   }
 	
 	//2. Write a static method called doubleArraySorted. 
